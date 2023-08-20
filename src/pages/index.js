@@ -20,6 +20,7 @@ import FormControl from "@mui/material/FormControl";
 
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import Head from "next/head";
 
 export default function Home() {
   const [radioInputValue, setRadioInputValue] = useState(true);
@@ -143,6 +144,10 @@ export default function Home() {
   ]);
 
   return (
+    <>
+    <Head>
+      <title>Amadeus | Flight Search Application</title>
+    </Head>
     <main className="mt-36 sm:mt-60 flex flex-col">
       <div className="px-6 py-2 w-fit flex items-center rounded-tl-lg rounded-tr-lg gap-2 bg-sky-100">
         <svg
@@ -586,6 +591,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   );
 }
 
