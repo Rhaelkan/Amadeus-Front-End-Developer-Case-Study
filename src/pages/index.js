@@ -168,7 +168,7 @@ export default function Home() {
         <h1 className="text-sky-500 font-semibold">Flight Search</h1>
       </div>
 
-      <div className="p-6 rounded-tr-lg rounded-b-lg backdrop-blur shadow-xl">
+      <div className="p-6 rounded-tr-lg rounded-b-lg shadow-xl">
         <ThemeProvider theme={theme}>
           <div>
             <FormControl>
